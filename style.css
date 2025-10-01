@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #e8e8e8 0%, #d0d0d0 100%);
+    background: #d9d9d9;
     min-height: 100vh;
 }
 
@@ -21,33 +21,33 @@ body {
 
 /* Header */
 .header {
-    background: #333;
+    background: #3a3a3a;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-dark {
-    background: #333;
+    background: #3a3a3a;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-simple {
-    background: #f5f5f5;
+    background: transparent;
     padding: 20px 30px;
     text-align: center;
 }
 
 .logo {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .header-buttons {
@@ -59,9 +59,9 @@ body {
     background: transparent;
     border: 2px solid white;
     color: white;
-    padding: 8px 20px;
+    padding: 6px 18px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     border-radius: 3px;
     transition: all 0.3s;
@@ -83,41 +83,43 @@ body {
     text-align: center;
 }
 
-.handshake-icon {
-    font-size: 80px;
+.handshake-icon-img {
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .main-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .description {
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #555;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #4a4a4a;
 }
 
 .btn-register {
-    background: #000;
+    background: #1a1a1a;
     color: white;
     border: none;
-    padding: 12px 50px;
-    font-size: 14px;
+    padding: 10px 45px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-bottom: 50px;
     transition: all 0.3s;
 }
@@ -127,16 +129,17 @@ body {
 }
 
 .benefits-section {
-    background: #333;
-    padding: 30px 20px;
+    background: #3a3a3a;
+    padding: 30px 20px 40px;
     margin-top: 40px;
 }
 
 .benefits-title {
     color: white;
-    font-size: 24px;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 .benefits-grid {
@@ -149,10 +152,10 @@ body {
 }
 
 .benefit-card {
-    background: #4a4a4a;
-    border-radius: 20px;
-    padding: 40px 20px;
-    min-height: 140px;
+    background: #565656;
+    border-radius: 18px;
+    padding: 35px 15px;
+    min-height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,27 +163,27 @@ body {
 
 .benefit-text {
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* Footer */
 .footer {
-    background: #000;
+    background: #1a1a1a;
     color: white;
-    padding: 20px 30px;
+    padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .footer-info {
     display: flex;
-    gap: 30px;
-    font-size: 12px;
+    gap: 35px;
+    font-size: 11px;
 }
 
 /* Form Pages */
@@ -194,22 +197,23 @@ body {
 
 .form-box {
     background: white;
-    border: 3px solid #333;
-    padding: 40px;
+    border: 2px solid #1a1a1a;
+    padding: 35px 40px;
     max-width: 450px;
     width: 100%;
 }
 
 .form-box h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    line-height: 1.3;
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: bold;
 }
 
 .form-subtitle {
-    font-size: 13px;
-    margin-bottom: 25px;
-    color: #555;
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: #4a4a4a;
 }
 
 .input-group {
@@ -218,23 +222,23 @@ body {
 
 .input-group label {
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     color: white;
-    background: #333;
-    padding: 8px 15px;
-    border-radius: 5px 5px 0 0;
+    background: #1a1a1a;
+    padding: 7px 12px;
+    border-radius: 4px 4px 0 0;
 }
 
 .form-input {
     width: 100%;
-    padding: 12px 15px;
-    background: #666;
+    padding: 12px 12px;
+    background: #5a5a5a;
     border: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 4px 4px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .form-input::placeholder {
@@ -244,9 +248,9 @@ body {
 .radio-group {
     display: flex;
     gap: 15px;
-    padding: 10px 15px;
-    background: #666;
-    border-radius: 0 0 5px 5px;
+    padding: 10px 12px;
+    background: #5a5a5a;
+    border-radius: 0 0 4px 4px;
 }
 
 .radio-group label {
@@ -261,15 +265,15 @@ body {
 
 .btn-continue {
     width: 100%;
-    background: #000;
+    background: #1a1a1a;
     color: white;
     border: none;
-    padding: 12px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 25px;
-    margin-top: 20px;
+    border-radius: 20px;
+    margin-top: 25px;
     transition: all 0.3s;
 }
 
@@ -280,22 +284,23 @@ body {
 .link-create {
     display: block;
     text-align: center;
-    margin-top: 15px;
-    color: #333;
-    font-size: 13px;
+    margin-top: 12px;
+    color: #1a1a1a;
+    font-size: 12px;
     text-decoration: underline;
 }
 
 /* Services Page */
 .services-container {
-    padding: 60px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .services-title {
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 18px;
+    margin-bottom: 45px;
+    color: #1a1a1a;
+    font-weight: 600;
 }
 
 .services-grid {
@@ -308,11 +313,11 @@ body {
 
 .service-card {
     background: white;
-    border-radius: 20px;
-    padding: 40px 20px;
+    border-radius: 18px;
+    padding: 35px 20px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
 }
 
 .service-card:hover {
@@ -321,14 +326,15 @@ body {
 }
 
 .service-icon {
-    font-size: 50px;
-    margin-bottom: 15px;
+    font-size: 45px;
+    margin-bottom: 12px;
 }
 
 .service-name {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: #1a1a1a;
 }
 
 /* Service List Page */
@@ -339,17 +345,18 @@ body {
 }
 
 .service-list-title {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
     text-align: center;
+    font-weight: bold;
 }
 
 .service-subtitle {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #333;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1a1a1a;
 }
 
 .service-buttons {
@@ -359,14 +366,14 @@ body {
 }
 
 .service-btn {
-    background: #333;
+    background: #2a2a2a;
     color: white;
     border: none;
-    padding: 18px;
-    font-size: 14px;
+    padding: 16px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
     text-align: left;
     transition: all 0.3s;
 }
@@ -391,12 +398,12 @@ body {
 
 .form-input-dark {
     width: 100%;
-    padding: 18px 15px;
-    background: #666;
+    padding: 16px 15px;
+    background: #5a5a5a;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .form-input-dark::placeholder {
@@ -404,14 +411,14 @@ body {
 }
 
 .btn-confirm {
-    background: #333;
+    background: #2a2a2a;
     color: white;
     border: none;
-    padding: 15px;
-    font-size: 16px;
+    padding: 14px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-top: 20px;
     transition: all 0.3s;
 }
@@ -427,44 +434,45 @@ body {
 }
 
 .confirmation-box {
-    background: #000;
+    background: #1a1a1a;
     color: white;
-    padding: 50px 40px;
-    max-width: 500px;
+    padding: 45px 40px;
+    max-width: 480px;
     margin: 0 auto 30px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .confirmation-message {
     background: white;
-    color: #000;
-    padding: 15px;
-    border-radius: 25px;
+    color: #1a1a1a;
+    padding: 12px;
+    border-radius: 20px;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 .confirmation-box h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 18px;
+    font-weight: bold;
 }
 
 .instructions {
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.9;
     text-align: center;
 }
 
 .btn-next {
-    background: #000;
+    background: #1a1a1a;
     color: white;
     border: 2px solid white;
-    padding: 10px 30px;
-    font-size: 24px;
+    padding: 8px 28px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all 0.3s;
 }
 
@@ -479,33 +487,34 @@ body {
 }
 
 .rating-box {
-    background: #000;
+    background: #1a1a1a;
     color: white;
-    padding: 50px 40px;
-    max-width: 500px;
+    padding: 45px 40px;
+    max-width: 480px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .rating-title-text {
-    font-size: 13px;
-    margin-bottom: 30px;
+    font-size: 12px;
+    margin-bottom: 25px;
 }
 
 .rating-heading {
-    font-size: 20px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .stars {
-    font-size: 50px;
-    margin-bottom: 40px;
-    letter-spacing: 10px;
+    font-size: 45px;
+    margin-bottom: 35px;
+    letter-spacing: 8px;
 }
 
 .star {
-    color: #666;
+    color: #555;
     cursor: pointer;
     transition: color 0.2s;
 }
@@ -517,14 +526,14 @@ body {
 
 .btn-rating {
     background: white;
-    color: #000;
+    color: #1a1a1a;
     border: none;
-    padding: 12px 40px;
-    font-size: 14px;
+    padding: 10px 35px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 25px;
-    margin: 10px;
+    border-radius: 20px;
+    margin: 8px;
     transition: all 0.3s;
 }
 
@@ -536,12 +545,12 @@ body {
     background: transparent;
     color: white;
     border: 2px solid white;
-    padding: 10px 30px;
-    font-size: 14px;
+    padding: 8px 28px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 25px;
-    margin: 10px;
+    border-radius: 20px;
+    margin: 8px;
     transition: all 0.3s;
 }
 
@@ -557,35 +566,36 @@ body {
 }
 
 .complaint-box {
-    background: #555;
+    background: #4a4a4a;
     color: white;
-    padding: 50px 40px;
-    max-width: 600px;
+    padding: 45px 40px;
+    max-width: 580px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .complaint-title-text {
-    font-size: 13px;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-bottom: 18px;
 }
 
 .complaint-heading {
-    font-size: 20px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .complaint-textarea {
     width: 100%;
-    min-height: 250px;
-    background: #000;
+    min-height: 230px;
+    background: #1a1a1a;
     color: white;
     border: none;
-    padding: 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-bottom: 30px;
+    padding: 18px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-bottom: 28px;
     font-family: Arial, sans-serif;
     resize: vertical;
 }
