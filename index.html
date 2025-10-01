@@ -1,53 +1,395 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Alura Plus</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCELLENCE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <section class="principal container">
-
-    <div class="container__caixa">
-      <h1 class="container__titulo"> Com o Combo+, você consegue aproveitar a Alura+ e o ALura Língua por um preço
-        único.
-      </h1>
-      <img src="img/Combo.png" alt="O Combo+ é a junção do Alura+ e do Alura Língua." class="container__imagem">
-      <a href="www.alura.com.br" class="container__botao"> Assine por 12x de R$ 120,00*</a>
-      <a href="www.alura.com.br" class="container__botao botao_secundario"> Assinar somente o Alura+ </a>
-      <p class="container__aviso"> O preço pode variar caso a assinatura seja feita em outros planos.</p>
+    <!-- Page 1: Home -->
+    <div class="page active" id="page-home">
+        <header class="header">
+            <div class="logo">EXCELLENCE</div>
+            <div class="header-buttons">
+                <button class="header-btn" onclick="navigateTo('page-login')">CADASTRAR-SE</button>
+                <button class="header-btn" onclick="navigateTo('page-login')">ENTRAR</button>
+            </div>
+        </header>
+        
+        <main class="home-content">
+            <div class="handshake-icon">🤝</div>
+            <h1 class="main-title">EXCELLENCE</h1>
+            <p class="subtitle">OPORTUNIDADES QUE TRANSFORMAM<br>NEGÓCIOS E PESSOAS.</p>
+            <p class="description">Oferecemos soluções digitais e espaço para facilitar<br>negócios. Seja cliente ou profissional, conectamos você de<br>forma mais, com qualidade e confiança direto na sua<br>casa.</p>
+            <button class="btn-register" onclick="navigateTo('page-register')">INSCREVER-SE</button>
+            
+            <div class="benefits-section">
+                <h2 class="benefits-title">BENEFÍCIOS</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-text">Flexibilidade<br>de horário</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-text">Economia<br>de<br>deslocamento</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-text">Segurança<br>nos<br>pagamentos</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-text">Portfólio<br>e Reputação</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-text">Facilidade<br>de Cadastro</div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-text">Mais<br>oportunidade<br>de Trabalho</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="logo">EXCELLENCE</div>
+            <div class="footer-info">
+                <div>@excellence.serviços</div>
+                <div>excellenceser vicos@gmail.com</div>
+                <div>(00) 00000-0000</div>
+            </div>
+        </footer>
     </div>
-  </section>
 
-  <section class="container secundario">
-    <img src="img/Plataformas.png" alt="Um computador com a tela do Alura aberta" class="secundario__imagem">
-    <div class="container__descricao">
-      <h2 class="descricao__titulo">Assista do seu jeito</h2>
-      <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros
-        aparelhos. Nossa seleção de cursos não para de crescer.</p>
+    <!-- Page 2: Login -->
+    <div class="page" id="page-login">
+        <header class="header-simple">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="form-container">
+            <div class="form-box">
+                <h2>Olá!<br>Seja bem vindo de volta!</h2>
+                <p class="form-subtitle">Confirme seus dados para iniciar sessão</p>
+                
+                <form>
+                    <div class="input-group">
+                        <label>E-mail:</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Senha:</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Confirme sua senha:</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    
+                    <button type="button" class="btn-continue" onclick="navigateTo('page-services')">Continuar</button>
+                    <a href="#" class="link-create" onclick="navigateTo('page-register'); return false;">Criar conta</a>
+                </form>
+            </div>
+        </main>
     </div>
-  </section>
 
-  <section class="container secundario">
-    <div class="container__descricao">
-      <p>Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia
-        e aprender inglês ou espanhol, onde e como quiser.</p>
-      <a href="www.alura.com.br"> Assine o Combo+</a>
+    <!-- Page 3: Register -->
+    <div class="page" id="page-register">
+        <header class="header-simple">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="form-container">
+            <div class="form-box">
+                <h2>Olá!<br>Bem vindo ao nosso site!</h2>
+                <p class="form-subtitle">Complete seus dados para continuar</p>
+                
+                <form>
+                    <div class="input-group">
+                        <label>Nome:</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Celular:</label>
+                        <input type="tel" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>E-mail:</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>CPF:</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Data de nascimento:</label>
+                        <input type="date" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Senha:</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Confirme sua senha:</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Cliente:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tipo" value="cliente"> Cliente</label>
+                            <label><input type="radio" name="tipo" value="prestador"> Prestador</label>
+                            <label><input type="radio" name="tipo" value="ambos"> Ambos</label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn-continue" onclick="navigateTo('page-services')">Continuar</button>
+                </form>
+            </div>
+        </main>
     </div>
-    <img src="img/Telas.png" alt="Telas do Alura Língua e do Alura Plus">
 
-  </section>
+    <!-- Page 4: Services Selection -->
+    <div class="page" id="page-services">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="services-container">
+            <h2 class="services-title">Como podemos te ajudar hoje?</h2>
+            
+            <div class="services-grid">
+                <div class="service-card" onclick="navigateTo('page-technical')">
+                    <div class="service-icon">⚙️</div>
+                    <div class="service-name">Assistência<br>técnica</div>
+                </div>
+                <div class="service-card" onclick="navigateTo('page-repairs')">
+                    <div class="service-icon">🔧</div>
+                    <div class="service-name">Reformas e<br>Reparos</div>
+                </div>
+                <div class="service-card" onclick="navigateTo('page-domestic')">
+                    <div class="service-icon">🏠</div>
+                    <div class="service-name">Serviços<br>Domésticos</div>
+                </div>
+            </div>
+        </main>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- Page 5: Technical Assistance -->
+    <div class="page" id="page-technical">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="service-list-container">
+            <h2 class="service-list-title">⚙️ Assistência técnica</h2>
+            <p class="service-subtitle">Selecione o serviço que você precisa</p>
+            
+            <div class="service-buttons">
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Ar condicionado</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Televisão</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Geladeira e Freezer</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Máquina de lavar</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Microondas</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Fogão e Fornos</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Máquina de lavar louças</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Impressora</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 6: Repairs -->
+    <div class="page" id="page-repairs">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="service-list-container">
+            <h2 class="service-list-title">🔧 Reformas e reparos</h2>
+            <p class="service-subtitle">Selecione o serviço que você precisa</p>
+            
+            <div class="service-buttons">
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Pedreiro</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Pintor</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Chaveiro</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Encanador</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Engenheiro</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Eletricista</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Gesseirizador</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Marceneiro</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 7: Domestic Services -->
+    <div class="page" id="page-domestic">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="service-list-container">
+            <h2 class="service-list-title">🏠 Serviços domésticos</h2>
+            <p class="service-subtitle">Selecione o serviço que você precisa</p>
+            
+            <div class="service-buttons">
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Diarista</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Limpador de piscina</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Passadeira</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Lavadeira</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Babá</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Cozinheira</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Motorista</button>
+                <button class="service-btn" onclick="navigateTo('page-schedule')">Serviços para Pets</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 8: Schedule -->
+    <div class="page" id="page-schedule">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="schedule-container">
+            <form class="schedule-form">
+                <div class="input-group">
+                    <label>Data</label>
+                    <input type="date" class="form-input-dark">
+                </div>
+                <div class="input-group">
+                    <label>Horário</label>
+                    <input type="time" class="form-input-dark">
+                </div>
+                <div class="input-group">
+                    <label>CEP:</label>
+                    <input type="text" class="form-input-dark">
+                </div>
+                <div class="input-group">
+                    <label>Complemento:</label>
+                    <input type="text" class="form-input-dark">
+                </div>
+                <div class="input-group">
+                    <label>Referência:</label>
+                    <input type="text" class="form-input-dark">
+                </div>
+                <div class="input-group">
+                    <label>Profissionais disponíveis</label>
+                    <input type="text" class="form-input-dark">
+                </div>
+                
+                <button type="button" class="btn-confirm" onclick="navigateTo('page-confirmation')">CONFIRMAR</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Page 9: Confirmation -->
+    <div class="page" id="page-confirmation">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+            <div class="user-icon">👤</div>
+        </header>
+        
+        <main class="confirmation-container">
+            <div class="confirmation-box">
+                <div class="confirmation-message">••••••••••• aceitou seu pedido</div>
+                <h3>Orientações:</h3>
+                <div class="instructions">
+                    -Aguarde pelo profissional<br>em casa<br>
+                    -Cumpra com horários<br>
+                    -Não desmarque sem<br>antecedência
+                </div>
+            </div>
+            <button type="button" class="btn-next" onclick="navigateTo('page-rate-provider')">→</button>
+        </main>
+    </div>
+
+    <!-- Page 10: Rate Provider -->
+    <div class="page" id="page-rate-provider">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="rating-container">
+            <div class="rating-box">
+                <div class="rating-title-text">Obrigada pela preferência!</div>
+                <h3 class="rating-heading">AVALIAR PRESTADOR</h3>
+                <div class="stars" id="provider-stars">
+                    <span class="star" onclick="rate('provider', 1)">★</span>
+                    <span class="star" onclick="rate('provider', 2)">★</span>
+                    <span class="star" onclick="rate('provider', 3)">★</span>
+                    <span class="star" onclick="rate('provider', 4)">★</span>
+                    <span class="star" onclick="rate('provider', 5)">★</span>
+                </div>
+                <button class="btn-rating" onclick="navigateTo('page-rate-client')">CONFIRMAR</button>
+                <button class="btn-skip" onclick="navigateTo('page-rate-client')">DESMARCAR</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 11: Rate Client -->
+    <div class="page" id="page-rate-client">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="rating-container">
+            <div class="rating-box">
+                <div class="rating-title-text">Obrigada por fazer parte do nosso time</div>
+                <h3 class="rating-heading">AVALIAR CLIENTE</h3>
+                <div class="stars" id="client-stars">
+                    <span class="star" onclick="rate('client', 1)">★</span>
+                    <span class="star" onclick="rate('client', 2)">★</span>
+                    <span class="star" onclick="rate('client', 3)">★</span>
+                    <span class="star" onclick="rate('client', 4)">★</span>
+                    <span class="star" onclick="rate('client', 5)">★</span>
+                </div>
+                <button class="btn-rating" onclick="navigateTo('page-rate-site')">CONFIRMAR</button>
+                <button class="btn-skip" onclick="navigateTo('page-rate-site')">DESMARCAR</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 12: Rate Site -->
+    <div class="page" id="page-rate-site">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="rating-container">
+            <div class="rating-box">
+                <div class="rating-title-text">Obrigada pela preferência!</div>
+                <h3 class="rating-heading">AVALIE NOSSO SITE</h3>
+                <div class="stars" id="site-stars">
+                    <span class="star" onclick="rate('site', 1)">★</span>
+                    <span class="star" onclick="rate('site', 2)">★</span>
+                    <span class="star" onclick="rate('site', 3)">★</span>
+                    <span class="star" onclick="rate('site', 4)">★</span>
+                    <span class="star" onclick="rate('site', 5)">★</span>
+                </div>
+                <button class="btn-rating" onclick="navigateTo('page-complaint')">CONFIRMAR</button>
+                <button class="btn-skip" onclick="navigateTo('page-complaint')">DESMARCAR</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Page 13: Complaint -->
+    <div class="page" id="page-complaint">
+        <header class="header-dark">
+            <div class="logo">EXCELLENCE</div>
+        </header>
+        
+        <main class="complaint-container">
+            <div class="complaint-box">
+                <div class="complaint-title-text">Obrigada pela preferência!</div>
+                <h3 class="complaint-heading">ESCREVA SUA RECLAMAÇÃO</h3>
+                <textarea class="complaint-textarea"></textarea>
+                <button class="btn-rating" onclick="navigateTo('page-home')">CONFIRMAR</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
